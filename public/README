@@ -1,0 +1,6 @@
+In order to setup GitHub Pages
+Follow your DNS provider's instructions to create two A records that point your custom domain to the following IP addresses:
+
+192.30.252.153
+192.30.252.154
+
