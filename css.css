@@ -1,0 +1,86 @@
+﻿a:hover{color:Gray}
+
+h1 {color:#FF0000; font-size:50px; font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h2 {color:Red; font-size:30px; font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+	color:#C0C0C0;
+}
+
+auto-style1 {
+	text-align: left;
+}
+
+p {color:#C0C0C0; font-size:20px; font-family: Arial, Helvetica, sans-serif;
+}
+
+div#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+}
+
+div { position :relative;}
+
+table {
+	font-size: 18px;
+}
+
+ol {
+	list-style:square
+}
+ol {
+	color: #C0C0C0;
+}
+body {
+
+	background:url('images/wendysweb2.jpg') no-repeat;
+	background-position:top center;
+	background-color:#151515 ;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-family:bold;
+}
+a {
+color:#000000;
+	text-decoration: none;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+label {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #C0C0C0;
+}
+li {
+	font-size: 15px;
+}
+.wrapper {
+margin-right: auto;
+margin-left:auto;
+margin-bottom:auto;
+margin-top:auto;
+}
+
+#wrap {
+  width: 837px;
+  margin: 0 auto;
+}
+
+
+.colorchange {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #C0C0C0;
+}
+.red{
+	color: #FFFFFF;
+}
+.red {
+	font-weight: bold;
+}
