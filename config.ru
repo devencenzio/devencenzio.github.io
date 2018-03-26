@@ -1,13 +1,8 @@
 use Rack::Static,
-  :urls => ["/images", "/scripts", "/css"],
-  :root => "public"
+  :urls => Dir.glob("public/*").map { |fn| fn.gsub(/public/, '')},
+  :root => 'public',
+  :index => 'index.html',
+  :header_rules => [[:all, {'Cache-Control' => 'public, max-age=3600'}]]
 
-run lambda { |env|
-  [
-    200,
-    {
-      'Content-Type'  => 'text/html',
-      'Cache-Control' => 'public, max-age=86400'
-    },
-  ]
-}
+  headers = {'Content-Type' => 'text/html', 'Content-Length' => '9'}
+  run lambda { |env| [404, headers, ['Not Found']] }
