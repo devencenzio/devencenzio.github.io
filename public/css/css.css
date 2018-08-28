@@ -47,10 +47,15 @@ body {
 	font-size:16px;
 	font-family:bold;
 }
-a {
-color:#000000;
+a, a:visited {
+color:#e8c61f;
 	text-decoration: none;
 }
+
+a:hover {
+  color: #099cff;
+}
+
 p {
 	font-family: Arial, Helvetica, sans-serif;
 }
