@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.3.4'
-gem 'rack'
-
+ruby '2.5.1'
+gem 'sinatra'
+gem 'rest-client'

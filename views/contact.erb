@@ -23,10 +23,10 @@
 <div id="wrap">
 <div id="layer1" style="position:relative; width: 597px; height: 56px; z-index: 1; left: 251px; top: 69px">
 <table style="width: 540px"><tr>
-<td style="height: 25px; width: 19px"><a href="index.html">Home</a></td>
-<td style="height: 25px; width: 31px"><a href="gallery.html#redirect1">Jobs Completed</a></td>
-<td style="width: 50px; height: 25px;"><a href="testimonials.html#redirect3">Testimonials</a></td>
-<td style="height: 25px; width: 50px;"><a href="contact.html">Contact Us</a></td></tr>
+<td style="height: 25px; width: 19px"><a href="/">Home</a></td>
+<td style="height: 25px; width: 31px"><a href="/gallery">Jobs Completed</a></td>
+<td style="width: 50px; height: 25px;"><a href="/testimonials">Testimonials</a></td>
+<td style="height: 25px; width: 50px;"><a href="/contact">Contact Us</a></td></tr>
 </table>
 </div>
 
@@ -48,19 +48,20 @@
 
 <div id="layer6" style="position:relative; width: 739px; height: 412px; z-index: 3; left: 38px; top: 408px">
 
-	<form action="mailto:jdevens0@gmail.com?subject=Devenzio%20Website%20Inquiry" name="contactme" method="get" style="height: 350px">
-		<input name="Submit1" type="submit" value="submit" style="position:absolute; left: 319px; top: 284px; height: 26px;" />&nbsp;
+	<form action="/contactform" name="contactme" method="post" style="height: 350px">
+		<input name="Submit1" type="submit" value="submit" style="position:absolute; left: 319px; top: 284px; height: 26px;" tabindex=20 />&nbsp;
 		<fieldset name="Group1" style="height:369px; width:712px">
 		<p style="position:absolute; left: 290px; top: -20px;"><strong>FREE ESTIMATES</strong></p>
 		<!-- labels start here -->
+		<label id="Label9" style="position:absolute; left: 16px; top: 46px; right: 570px;">First and Last name:</label>
 		<label id="Label8" style="position:absolute; left: 16px; top: 93px; right: 550px;" class="auto-style3">Contact Phone number:</label>
 		<label id="Label7" style="position:absolute; left: 14px; top: 147px; right: 549px;" class="auto-style3">Contact Email Address:</label>
 		<label id="Label3" style="position:absolute; left: 18px; top: 211px; right: 529px;">Brief description of the job:</label>
 		<!--labels end here, input boxes start -->
-		<input name="phone" type="text"style="position:absolute; left: 217px; top: 93px; width: 195px;" />
-		<input name="Other" type="text"style="position:absolute; left: 526px; top: 321px; width: 180px;" />
-		<input name="name" type="text"style="position:absolute; left: 216px; top: 48px; width: 195px;" />
-		<textarea name="message" style="position:absolute; left: 225px; top: 201px; width: 148px; height: 67px;" ></textarea>
+		<input name="phone" type="text"style="position:absolute; left: 217px; top: 93px; width: 195px;" tabindex=2 />
+		<input name="Other" type="text"style="position:absolute; left: 526px; top: 321px; width: 180px;" tabindex=12 />
+		<input name="name" type="text"style="position:absolute; left: 216px; top: 48px; width: 195px;" tabindex=1 />
+		<textarea name="message" style="position:absolute; left: 225px; top: 201px; width: 148px; height: 67px;" tabindex=4></textarea>
 		<label id="Label13" style="text-align: right; position:absolute; left: 465px; top: 31px; right: 90px; height: 18px;">Carpentry Renovation:</label>
 		<label id="Label12" style="text-align: right; position:absolute; left: 465px; top: 69px; right: 90px; height: 18px;">Trim:</label>
 		<label id="Label15" style="text-align: right; position:absolute; left: 460px; top: 111px; right: 90px; height: 18px;">Stairs:</label>&nbsp;
@@ -69,18 +70,16 @@
 		<label id="Label17" style="text-align: right; position:absolute; left: 461px; top: 212px; right: 90px; height: 18px;">Decks:</label>
 		<label id="Label16" style="text-align: right; position:absolute; left: 452px; top: 248px; right: 90px; height: 18px;">Wood Rot Repair:</label>
 		<label id="Label18" style="text-align: right; position:absolute; left: 452px; top: 322px; right: 220px; height: 18px;">Other:</label>
-		<!-- <label id="Label10" style="position:absolute; left: 456px; top: 283px; right: 231px; height: 19px;">Trim:</label> -->
-		<label id="Label9" style="position:absolute; left: 16px; top: 46px; right: 570px;">First and Last name:</label>
 		<!--inputs start here-->
-		<input name="trim" style="position:absolute; left: 663px; top: 70px;  right: 56px; width: 20px; height: 16px; bottom: 321px;" type="checkbox" />
-		<input name="newcon" style="position:absolute; left: 666px; height: 23px;  right: 53px;bottom: 208px;" type="checkbox" />
+		<input name="trim" style="position:absolute; left: 663px; top: 70px;  right: 56px; width: 20px; height: 16px; bottom: 321px;" type="checkbox" tabindex=6 />
+		<input name="newcon" style="position:absolute; left: 666px; height: 23px;  right: 53px;bottom: 208px;" type="checkbox" tabindex=9 />
 		<!-- <input name="trim" style="position:absolute; left: 666px; top: 284px; right: 53px;"  type="checkbox" /> -->
-		 <input name="woodrot" style="position:absolute; left: 666px; top: 252px; right: 53px; height: 16px;" type="checkbox" />
-		<input name="decks" style="position:absolute; left: 666px; top: 217px; right: 53px; height: 16px; visibility:visible" type="checkbox" />
-		<input name="drywall" style="position:absolute; left: 666px; top: 145px; right: 53px; bottom: 247px;" type="checkbox" />
-		<input name="renovation" style="position:absolute;  left: 666px; top: 33px; height: 20px;" id="redirect2" type="checkbox" />
-		<input name="stairs" style="position:absolute; left: 666px; top: 110px; right: 53px;"type="checkbox" />
-		<input name="email" type="text"style="position:absolute; left: 217px; top: 146px; width: 195px;" /></fieldset>
+		 <input name="woodrot" style="position:absolute; left: 666px; top: 252px; right: 53px; height: 16px;" type="checkbox" tabindex=11 />
+		<input name="decks" style="position:absolute; left: 666px; top: 217px; right: 53px; height: 16px; visibility:visible" type="checkbox" tabindex=10 />
+		<input name="drywall" style="position:absolute; left: 666px; top: 145px; right: 53px; bottom: 247px;" type="checkbox" tabindex=8 />
+		<input name="renovation" style="position:absolute;  left: 666px; top: 33px; height: 20px;" id="redirect2" type="checkbox" tabindex=5/>
+		<input name="stairs" style="position:absolute; left: 666px; top: 110px; right: 53px;"type="checkbox" tabindex=7 />
+		<input name="email" type="text"style="position:absolute; left: 217px; top: 146px; width: 195px;" tabindex=3 /></fieldset>
 
 		</form>
 <script type="text/javascript" language="javascript">
