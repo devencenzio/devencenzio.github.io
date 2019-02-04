@@ -11,7 +11,7 @@ helpers do
   # try to limit the message to 160 characters
   def send_sms(message)
     blowerio = RestClient::Resource.new(ENV['BLOWERIO_URL'])
-    response = blowerio['/messages'].post :to => '+' << NOTIFICATION_PHONE,
+    response = blowerio['/messages'].post :to => '+1' << NOTIFICATION_PHONE,
        :message => message.gsub(/"/, '*').gsub(/[^a-zA-Z0-9~!@#$%^&*()\[\]{};':,.\/<>?| ]/, ' ')
     logger.info "BLOWERIO SMS: #{response.code}"
   end
