@@ -39,7 +39,7 @@ ol {
 }
 body {
 
-	background:url('public/images/background_gradients.jpg') no-repeat;
+	background:url('../../public/images/background_gradients.jpg') no-repeat;
 	background-position:top center;
 	background-color:#151515 ;
 	text-align: center;
